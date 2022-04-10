@@ -1,5 +1,6 @@
 package codingTestStudy;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StringPractice {
@@ -69,8 +70,74 @@ public class StringPractice {
 	}
 	public String ReverseString() {
 		String ans = "";
+		//N개의 단어가 주어지면 각 단어를 뒤집어 출력하는 프로그램을 작성하세요.
+		Scanner sc = new Scanner(System.in);
+		
+		
+		ArrayList<String> input = new ArrayList<String>(); 
+		ArrayList<String> output = new ArrayList<String>(); 
+		int num = sc.nextInt();
+		String temp = "";
+		String reverse = "";
+		
+		
+		for(int i=0; i<num; i++) {
+			input.add(sc.next());
+			temp += input.get(i);
+			
+			for(int j = input.get(i).length()-1; j >= 0; j--) {
+				reverse += Character.toString(temp.charAt(j));
+			}
+			output.add(reverse);
+			reverse = "";
+			temp = "";
+		}
+		
+		for(String a : output) 
+			System.out.println(a);
 		
 		return ans;
 	}
 
+	public String EngReverseString() {
+		String ans = "";
+		//N개의 단어가 주어지면 각 단어를 뒤집어 출력하는 프로그램을 작성하세요.
+		Scanner sc = new Scanner(System.in);
+		
+		char [] input = sc.nextLine().toCharArray(); 
+		
+		char temp ;
+		
+		int lt = 0, rt = input.length -1;
+		
+		while(lt<rt) {
+			if(!Character.isAlphabetic(input[lt]))
+				lt++;
+			else if(!Character.isAlphabetic(input[rt]))
+				rt--;
+			else{
+				temp = input[lt];
+				input[lt] = input[rt];
+				input[rt] = temp;
+				
+				lt++;
+				rt--;
+			}
+		}
+		ans = String.valueOf(input);
+		System.out.println(ans);
+		
+		
+		return ans;
+	}
+	public String DuplicationRemove() {
+		String ans = "";
+		//소문자로 된 한개의 문자열이 입력되면 중복된 문자를 제거하고 출력하는 프로그램을 작성하세요.
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		return ans;
+	}
 }

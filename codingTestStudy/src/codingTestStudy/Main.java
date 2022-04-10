@@ -7,8 +7,8 @@ public class Main {
 		StringPractice fs = new StringPractice();
 //		int ans  = fs.FindStr();
 //		String ans = fs.UNL();
-		String ans = fs.StrLen();
-		System.out.println(ans);
+		String ans = fs.ReverseString();
+//		System.out.println(ans);
 	}
 
 }
