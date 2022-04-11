@@ -189,6 +189,7 @@ public class StringPractice {
 		}else {
 			System.out.println("NO");
 		}
+		 
 	}
 	
 	
