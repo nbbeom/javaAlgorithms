@@ -140,4 +140,57 @@ public class StringPractice {
 		
 		return ans;
 	}
+	public void IsCircular() {
+//		앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열을 회문 문자열이라고 합니다.
+//
+//		문자열이 입력되면 해당 문자열이 회문 문자열이면 "YES", 회문 문자열이 아니면 “NO"를 출력하는 프로그램을 작성하세요.
+
+		Scanner sc = new Scanner(System.in);
+		/*
+		char[] word = sc.nextLine().toCharArray();
+		
+		//왼쪽 인덱스와 오른쪽 인덱스를 설정해줌.
+		int lt = 0;
+		int rt = word.length-1;
+		while(lt<=rt) {
+			if(Character.toLowerCase(word[lt]) != Character.toLowerCase(word[rt])) {
+				System.out.println("NO");
+				break;
+			}else if(lt==rt || rt-lt == 1){
+				System.out.println("YES");
+			}
+			lt ++;
+			rt --;
+		}
+		
+		*/
+		String word = sc.nextLine();
+		word = word.toLowerCase();
+		
+		String wordReverse = new StringBuilder(word).reverse().toString();
+		
+		
+		if(word.equals(wordReverse)) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+	}
+	public void TruePalindrome() {
+		Scanner sc = new Scanner(System.in);
+		String word = sc.nextLine();
+		word = word.toLowerCase().replaceAll("[^a-z]", "");
+		
+		String wordReverse = new StringBuilder(word).reverse().toString();
+		
+		
+		if(word.equals(wordReverse)) {
+			System.out.println("YES");
+		}else {
+			System.out.println("NO");
+		}
+	}
+	
+	
+	
 }

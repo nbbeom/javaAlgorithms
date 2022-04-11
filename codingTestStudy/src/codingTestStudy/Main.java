@@ -7,7 +7,9 @@ public class Main {
 		StringPractice fs = new StringPractice();
 //		int ans  = fs.FindStr();
 //		String ans = fs.UNL();
-		String ans = fs.ReverseString();
+//		String ans = fs.ReverseString();
+//		fs.IsCircular();
+		fs.TruePalindrome();
 //		System.out.println(ans);
 	}
 
