@@ -9,7 +9,9 @@ public class Main {
 //		String ans = fs.UNL();
 //		String ans = fs.ReverseString();
 //		fs.IsCircular();
-		fs.TruePalindrome();
+//		fs.TruePalindrome();
+//		fs.numberCollect();
+		fs.MinDistance();
 //		System.out.println(ans);
 	}
 
