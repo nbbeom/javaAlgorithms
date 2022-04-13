@@ -11,7 +11,8 @@ public class Main {
 //		fs.IsCircular();
 //		fs.TruePalindrome();
 //		fs.numberCollect();
-		fs.MinDistance();
+//		fs.MinDistance();
+		fs.ReString();
 //		System.out.println(ans);
 	}
 
