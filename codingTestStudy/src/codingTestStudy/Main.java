@@ -12,7 +12,8 @@ public class Main {
 //		fs.TruePalindrome();
 //		fs.numberCollect();
 //		fs.MinDistance();
-		fs.ReString();
+//		fs.ReString();
+		fs.BIN();
 //		System.out.println(ans);
 	}
 
