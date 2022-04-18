@@ -1,5 +1,7 @@
 package codingTestStudy;
 
+import codingTestStudy.StringPractice.StringPractice;
+
 public class Main {
 
 	public static void main(String[] args) {

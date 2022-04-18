@@ -1,4 +1,4 @@
-package codingTestStudy;
+package ArrayPractice;
 
 import java.util.ArrayList;
 import java.util.Scanner;

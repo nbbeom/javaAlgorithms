@@ -1,4 +1,4 @@
-package codingTestStudy;
+package codingTestStudy.StringPractice;
 
 import java.util.ArrayList;
 import java.util.Scanner;
