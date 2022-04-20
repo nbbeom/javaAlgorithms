@@ -1,5 +1,6 @@
 package codingTestStudy;
 
+import ArrayPractice.ArrayPractice;
 import codingTestStudy.StringPractice.StringPractice;
 
 public class Main {
@@ -7,6 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StringPractice fs = new StringPractice();
+		ArrayPractice ap = new ArrayPractice();
 //		int ans  = fs.FindStr();
 //		String ans = fs.UNL();
 //		String ans = fs.ReverseString();
@@ -15,7 +17,10 @@ public class Main {
 //		fs.numberCollect();
 //		fs.MinDistance();
 //		fs.ReString();
-		fs.BIN();
+//		fs.BIN();
+		
+		//ap.VisibleStudent();
+		ap.RCP();
 //		System.out.println(ans);
 	}
 
