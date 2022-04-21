@@ -99,4 +99,40 @@ public class ArrayPractice {
 		}
 		
 	}
+	
+	public void pibonacci() {
+//		1) 피보나키 수열을 출력한다. 피보나치 수열이란 앞의 2개의 수를 합하여 다음 숫자가 되는 수열이다.
+		
+//		2) 입력은 피보나치 수열의 총 항의 수 이다. 만약 7이 입력되면 1 1 2 3 5 8 13을 출력하면 된다.
+		
+		Scanner s = new Scanner(System.in);
+		int num = s.nextInt();
+		
+		int [] ans = new int[num];
+		ans[0] = 1;
+		ans[1] = 1;
+		System.out.printf(ans[0]+ " ");
+		System.out.printf(ans[1]+ " ");
+		for(int i = 2; i < num; i++) {
+			ans[i] = ans[i-2] + ans[i-1];
+			System.out.print(ans[i] +" ");
+		}
+	}
+	
+	
+	public void Eratosthenes() {
+		
+//		자연수 N이 입력되면 1부터 N까지의 소수의 개수를 출력하는 프로그램을 작성하세요.
+//		만약 20이 입력되면 1부터 20까지의 소수는 2, 3, 5, 7, 11, 13, 17, 19로 총 8개입니다..
+//		첫 줄에 자연수의 개수 N(2<=N<=200,000)이 주어집니다.
+ 
+		Scanner s = new Scanner(System.in);
+		int num = s.nextInt();
+		
+		int [] ans = new int[num];
+		
+		
+	}
+	
+	
 }

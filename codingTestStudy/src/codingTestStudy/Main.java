@@ -20,7 +20,8 @@ public class Main {
 //		fs.BIN();
 		
 		//ap.VisibleStudent();
-		ap.RCP();
+//		ap.RCP();
+		ap.pibonacci();
 //		System.out.println(ans);
 	}
 
