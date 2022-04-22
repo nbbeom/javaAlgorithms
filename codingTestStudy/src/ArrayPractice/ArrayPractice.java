@@ -129,9 +129,58 @@ public class ArrayPractice {
 		Scanner s = new Scanner(System.in);
 		int num = s.nextInt();
 		
-		int [] ans = new int[num];
+//		int temp =0;
+		int ans = 0;
 		
+		//time out err T_T O(n^2)
+//		for(int i= 2; i<=num ; i++) {
+//			for(int j =2; j<=i; j++) {
+////				System.out.println(i%j);
+//				if(i%j == 0) {
+////					System.out.println("i :" + i+"j :" +j);
+//					temp +=1;
+//				}
+//			}
+//			if(temp == 1) {
+//				ans+=1;
+//			}
+//			temp = 0;
+//		}
 		
+		// 2의 배수 제거
+		//시간을 반으로 줄여도 안되네 ㅋㅋㅋ;
+//		int [] temp = new int[num+1];
+//		
+//		ans +=1; // 2는 소수이므로
+//		for (int i = 1; i < temp.length/2; i++) {
+//			int k = i*2+1;
+//			if(temp[k]==0) {
+//				for(int j =k+1; j<num+1; j++) {
+//					if( temp[j] == 0) {
+//						if(j%k == 0) {
+//							temp[j] = 1; 
+//						}
+//					}
+//					
+//				}
+//			}
+//			if(temp[k]==0)
+//				ans+=1;
+//		}
+//		System.out.println(ans);
+		
+		//고생할 문제는 아니었으나 생각을 많이했다..
+		int answer = 0;
+		int [] ch = new int[num+1];
+		for(int i=2 ; i<num; i++) {
+			if(ch[i] ==0) {
+				answer++;
+				for(int j=i;j<=num; j=j+i)
+					ch[j]=1;
+			}
+		}
+		
+		System.out.println(answer);
 	}
 	
 	

@@ -21,8 +21,10 @@ public class Main {
 		
 		//ap.VisibleStudent();
 //		ap.RCP();
-		ap.pibonacci();
+//		ap.pibonacci();
+		ap.Eratosthenes();
 //		System.out.println(ans);
 	}
 
 }
+
