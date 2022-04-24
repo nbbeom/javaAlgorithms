@@ -188,7 +188,6 @@ public class ArrayPractice {
 //		예를 들어 32를 뒤집으면 23이고, 23은 소수이다. 그러면 23을 출력한다. 단 910를 뒤집으면 19로 숫자화 해야 한다.
 //		첫 자리부터의 연속된 0은 무시한다.
 		 Scanner sc = new Scanner(System.in);
-			System.out.println("소수뒤집기");
 			int n = sc.nextInt();
 			String s;
 			String result = "";
@@ -215,6 +214,27 @@ public class ArrayPractice {
 		
 		//소수 응용
 		
+	}
+	
+	public void Bonus() {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		int []nums = new int[n];
+		int adds =0;
+		int ans = 0;
+		for(int i =0; i<n; i++) {
+			nums[i] =sc.nextInt();
+			if(nums[i] == 1) {
+				ans= ans + adds + 1;
+				adds++;
+			}else {
+				adds = 0;
+			}
+		}
+		
+		System.out.println(ans);
 	}
 	
 }

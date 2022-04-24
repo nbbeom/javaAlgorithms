@@ -23,7 +23,8 @@ public class Main {
 //		ap.RCP();
 //		ap.pibonacci();
 //		ap.Eratosthenes();
-		ap.ReversePrime();
+//		ap.ReversePrime();
+		ap.Bonus();
 //		System.out.println(ans);
 	}
 
