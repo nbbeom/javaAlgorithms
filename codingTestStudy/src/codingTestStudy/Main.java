@@ -22,7 +22,8 @@ public class Main {
 		//ap.VisibleStudent();
 //		ap.RCP();
 //		ap.pibonacci();
-		ap.Eratosthenes();
+//		ap.Eratosthenes();
+		ap.ReversePrime();
 //		System.out.println(ans);
 	}
 
