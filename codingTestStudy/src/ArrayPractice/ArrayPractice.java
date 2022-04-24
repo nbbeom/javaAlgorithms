@@ -209,7 +209,7 @@ public class ArrayPractice {
 				if (count == 2) {
 					result += num + " ";
 				}
-				build.setLength(0); //초기화 } System.out.println(result);
+				build.setLength(0); //
 			}
 			System.out.println(result);
 		
