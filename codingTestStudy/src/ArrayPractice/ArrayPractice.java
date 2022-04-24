@@ -213,7 +213,7 @@ public class ArrayPractice {
 			}
 			System.out.println(result);
 		
-		
+		//소수 응용
 		
 	}
 	
