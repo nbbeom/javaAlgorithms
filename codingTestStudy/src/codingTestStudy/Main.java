@@ -24,7 +24,7 @@ public class Main {
 //		ap.pibonacci();
 //		ap.Eratosthenes();
 //		ap.ReversePrime();
-		ap.Bonus();
+		ap.Score();
 //		System.out.println(ans);
 	}
 
