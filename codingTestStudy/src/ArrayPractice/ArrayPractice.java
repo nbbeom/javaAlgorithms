@@ -269,4 +269,105 @@ public class ArrayPractice {
 
 		System.out.println(myRank);
 	}
+	
+	
+	public void bingo() {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		int n  = sc.nextInt();
+		int[][] num = new int[n][n];
+		//가로, 세로, 격자
+		int max = 0;
+		int cross = 0;
+		int reCross = 0;
+		
+		int col =0;
+		int coltemp = 0;
+		int row =0;
+		int rowtemp =0;
+		for(int i=0; i<n; i++) {
+			for(int j=0;j<n;j++) {
+				num[i][j] =sc.nextInt();
+				//가로
+				coltemp += num[i][j];
+				//격자
+				if(i==j) {
+					cross += num[i][i];
+				}else if(i+j == n-1)
+					reCross += num[i][j];
+			}	
+			if(coltemp>col) {
+				col = coltemp;
+			}
+			coltemp = 0;
+		}
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				rowtemp +=num[j][i];
+			}
+			if(rowtemp>row) {
+				row = rowtemp;
+			}
+			rowtemp = 0;
+		}
+		if(cross > reCross) {
+			cross =cross;
+		}else if(reCross > cross) {
+			cross =reCross;
+		}else {
+			cross =reCross;
+		}
+		
+		if(col > row) {
+			max = col;
+		}else if(row > col) {
+			max = row;
+		}else {
+			max = row;
+		}
+		
+		if(max > cross) {
+			System.out.println(max);
+		}else if (cross > max) {
+			System.out.println(cross);
+		}else {
+			System.out.println(cross);
+		}
+			
+		
+	}
+	
+	public void mountain() {
+		Scanner sc = new Scanner(System.in);
+		int n  = sc.nextInt();
+		int[][] num = new int[n][n];
+		
+		int[] dx = {-1,0,1,0};
+		int[] dy = {0,1,0,-1};
+		int top = 0;
+		for(int i=0; i<n; i++) 
+			for(int j=0;j<n;j++)
+				num[i][j] =sc.nextInt();
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				boolean flag = true;
+				for(int k=0; k<4; k++) {
+					int nx = i+dx[k];
+					int ny = j+dy[k];
+					if(nx>=0 &&nx>=0 &&ny<n && num[nx][ny]>=num[i][j]) {
+						flag = false;
+						break;
+					}
+				}
+				if(flag) top++;
+			}
+		}
+		System.out.println(top);
+		
+		
+	}
+	
 }

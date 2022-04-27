@@ -24,7 +24,9 @@ public class Main {
 //		ap.pibonacci();
 //		ap.Eratosthenes();
 //		ap.ReversePrime();
-		ap.Score();
+//		ap.Score();
+//		ap.bingo();
+		ap.mountain();
 //		System.out.println(ans);
 	}
 
