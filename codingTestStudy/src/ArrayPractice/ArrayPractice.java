@@ -366,8 +366,12 @@ public class ArrayPractice {
 			}
 		}
 		System.out.println(top);
-		
-		
+	}
+	
+	public void BanJang() {
+		Scanner sc = new Scanner(System.in);
+		int n  = sc.nextInt();
+		int[][] num = new int[n][n];
 	}
 	
 }

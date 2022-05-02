@@ -1,6 +1,7 @@
 package codingTestStudy;
 
 import ArrayPractice.ArrayPractice;
+import ArrayPractice.TwoPointer;
 import codingTestStudy.StringPractice.StringPractice;
 
 public class Main {
@@ -9,7 +10,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		StringPractice fs = new StringPractice();
 		ArrayPractice ap = new ArrayPractice();
-//		int ans  = fs.FindStr();
+		TwoPointer tp = new TwoPointer();
+//		int ans  = fs.FindStr();.
 //		String ans = fs.UNL();
 //		String ans = fs.ReverseString();
 //		fs.IsCircular();
@@ -26,7 +28,8 @@ public class Main {
 //		ap.ReversePrime();
 //		ap.Score();
 //		ap.bingo();
-		ap.mountain();
+//		ap.mountain();
+		tp.ArraySum();
 //		System.out.println(ans);
 	}
 
