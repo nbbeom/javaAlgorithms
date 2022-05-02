@@ -27,7 +27,7 @@ public class TwoPointer {
 		Collections.sort(arrList);
 		
 		for(int i=0; i<arrList.size(); i++) {
-			System.out.print(arrList.get(i)+ " ");
+			System.out.print(arrList.get(i)+ "  ");
 		}
 	}
 }
