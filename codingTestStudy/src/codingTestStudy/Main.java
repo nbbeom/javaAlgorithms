@@ -1,12 +1,14 @@
 package codingTestStudy;
 
+import java.io.IOException;
+
 import ArrayPractice.ArrayPractice;
 import ArrayPractice.TwoPointer;
 import codingTestStudy.StringPractice.StringPractice;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		StringPractice fs = new StringPractice();
 		ArrayPractice ap = new ArrayPractice();
@@ -29,7 +31,9 @@ public class Main {
 //		ap.Score();
 //		ap.bingo();
 //		ap.mountain();
-		tp.ArraySum();
+//		tp.ArraySum();
+		tp.CommonElements();
+			// TODO Auto-generated catch block
 //		System.out.println(ans);
 	}
 
