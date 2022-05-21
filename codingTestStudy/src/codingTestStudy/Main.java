@@ -32,7 +32,9 @@ public class Main {
 //		ap.bingo();
 //		ap.mountain();
 //		tp.ArraySum();
-		tp.CommonElements();
+//		tp.CommonElements();
+		
+		tp.MaxAmt();
 			// TODO Auto-generated catch block
 //		System.out.println(ans);
 	}

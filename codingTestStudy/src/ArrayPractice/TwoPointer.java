@@ -72,4 +72,49 @@ public class TwoPointer {
 		
 		
 	}
+	
+	public void MaxAmt() {
+//		현수의 아빠는 제과점을 운영합니다. 현수 아빠는 현수에게 N일 동안의 매출기록을 주고 연속된 K일 동안의 최대 매출액이 얼마인지 구하라고 했습니다.
+//		만약 N=10이고 10일 간의 매출기록이 아래와 같습니다. 이때 K=3이면
+//		12 1511 20 2510 20 19 13 15
+//		연속된 3일간의 최대 매출액은 11+20+25=56만원입니다.
+//		여러분이 현수를 도와주세요.
+
+//		10 3
+//		12 15 11 20 25 10 20 19 13 15
+		
+//		56
+		
+		//슬라이딩 도어 방식을 이용해 해결
+
+		Scanner s = new Scanner(System.in);
+		
+		int n = s.nextInt();
+		int k = s.nextInt();
+		
+		int [] amt = new int[n];
+		int maxTemp = 0;
+		
+		for( int i =0; i < n ; i++) {
+			amt[i] = s.nextInt();
+			if(i < k) {
+				maxTemp += amt[i];
+			}
+		}
+		
+		int temp =maxTemp;
+		
+		for (int i =k; i<n-k; i++) {
+			temp  +=  amt[i] - amt[i-k];
+			System.out.println(maxTemp);
+			System.out.println(temp);
+			if(maxTemp < temp) {
+				maxTemp = temp;
+			}
+		}
+		
+		System.out.println(maxTemp);
+		
+
+	}
 }
