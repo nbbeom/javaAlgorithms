@@ -117,4 +117,47 @@ public class TwoPointer {
 		
 
 	}
+	public void Complex() {
+//		N개의 수로 이루어진 수열이 주어집니다.
+//
+//		이 수열에서 연속부분수열의 합이 특정숫자 M이 되는 경우가 몇 번 있는지 구하는 프로그램을 작성하세요.
+//
+//		만약 N=8, M=6이고 수열이 다음과 같다면
+//
+		Scanner s = new Scanner(System.in);
+		
+		int n = s.nextInt();
+		int k = s.nextInt();
+		
+		int [] nums = new int[n];
+		
+		for( int i =0; i < n ; i++) {
+			nums[i] = s.nextInt();
+		}
+		
+		int rt = 0;
+		int lt = 0;
+		int ans = 0;
+		
+		int sum = 0;
+		while (rt < n) {
+			sum += nums[rt];
+			if(sum == k) {
+				ans++;
+			}
+			while(sum >= k) {
+				sum-=nums[lt++];
+				if(sum == k) {
+					ans ++;
+				}
+			}
+			
+			rt ++;
+			
+		}
+		
+		System.out.println(ans);
+		
+		
+	}
 }
